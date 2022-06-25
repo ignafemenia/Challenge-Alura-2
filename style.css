@@ -1,0 +1,212 @@
+@import url("https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap");
+
+#body {
+  background-color: rgb(70, 84, 88);
+  font-family: "Architects Daughter";
+}
+
+h1 {
+  border: 2px solid black;
+  margin: auto;
+  padding: 4px;
+  background-color: black;
+  color: white;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 2px;
+}
+
+.board-actions {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  width: 90%;
+}
+
+canvas {
+  margin: 10px 0;
+  border: 2px solid rgb(255, 172, 62);
+}
+
+.actions {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 10px 16px;
+}
+
+.botones {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.botones button {
+  margin: 10px 2px;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.1);
+  font-size: 20px;
+  border: none;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.nueva-palabra:hover,
+.rendirse:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.nueva-palabra:active {
+  background-color: orange;
+}
+
+.rendirse:active {
+  background-color: rgb(200, 0, 0);
+}
+
+.keywords {
+  border: 1px solid rgb(255, 172, 62);
+  text-align: center;
+  padding: 4px;
+  background-color: rgb(43, 48, 49);
+  margin: 10px auto;
+}
+
+.keywords li {
+  display: inline-flex;
+  justify-content: center;
+  width: 40px;
+  margin: 4px;
+  padding: 10px;
+  font-size: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+  list-style: none;
+  cursor: pointer;
+}
+
+.intentos-restantes {
+  margin: 16px auto;
+  text-align: center;
+  color: white;
+  font-size: 20px;
+  line-height: 30px;
+  text-shadow: 0 0 10px black;
+}
+
+.palabra {
+  display: flex;
+  justify-content: center;
+  margin: 10px 0;
+  font-size: 24px;
+}
+
+.letra {
+  border: 1px solid white;
+  color: white;
+}
+
+li:hover {
+  transform: scale(1.1);
+}
+
+li:active {
+  background-color: rgb(255, 172, 62);
+  color: black;
+}
+
+li::selection {
+  background: none;
+}
+
+footer {
+  margin: auto;
+  padding: 6px;
+  background-color: rgba(0, 0, 0, 0.5);
+  font-style: italic;
+  color: rgb(255, 255, 255);
+  text-align: center;
+}
+
+.copyrigth {
+  margin-right: 16px;
+}
+
+.redes img {
+  margin: 0 4px;
+}
+
+.imgRedes {
+  width: 32px;
+  height: auto;
+  transition: 0.2s all;
+  filter: invert();
+}
+
+.imgRedes:hover {
+  transform: scale(1.2);
+}
+
+/* JAVASCRIPT CSS JAVASCRIPT CSS JAVASCRIPT CSS JAVASCRIPT CSS JAVASCRIPT CSS JAVASCRIPT CSS JAVASCRIPT CSS JAVASCRIPT CSS */
+.letra-correcta {
+  border: none;
+  background-color: rgb(160, 255, 160);
+  color: rgb(0, 180, 0);
+  pointer-events: none;
+}
+
+.letra-incorrecta {
+  border: none;
+  background-color: rgb(255, 130, 130);
+  color: rgb(200, 0, 0);
+  pointer-events: none;
+}
+
+.letra-bloqueada {
+  pointer-events: none;
+  border: 1px solid gray;
+  color: gray;
+}
+
+.campo-letras {
+  width: 40px;
+  height: 45px;
+  padding: 10px;
+  margin: 1px;
+  text-align: center;
+  background-color: white;
+}
+
+.palabra-ahorcado-bien {
+  width: 40px;
+  padding: 10px;
+  text-align: center;
+  background-color: rgb(160, 255, 160);
+  color: rgb(0, 180, 0);
+}
+
+.palabra-ahorcado-mal {
+  width: 40px;
+  padding: 10px;
+  text-align: center;
+  background-color: rgb(255, 130, 130);
+  color: rgb(200, 0, 0);
+}
+
+.botonOff {
+  pointer-events: none;
+}
+
+/* MEDIA MEDIA MEDIA MEDIA MEDIA MEDIA MEDIA MEDIA MEDIA MEDIA MEDIA MEDIA MEDIA MEDIA MEDIA MEDIA MEDIA MEDIA MEDIA MEDIA MEDIA */
+
+@media screen and (max-width: 768px) {
+  .board-actions {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .actions {
+    margin: 0;
+  }
+}

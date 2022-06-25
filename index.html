@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="Imagenes/Horca1.ico" />
+    <title>Ahorcado</title>
+    <link rel="stylesheet" href="normalize.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body id="body">
+    <h1>Hangman Game</h1>
+    <div class="board-actions">
+      <canvas width="600" height="400"></canvas>
+      <div class="actions">
+        <div class="botones">
+          <button class="nueva-palabra">New Word</button>
+          <button class="rendirse botonOff">Give up</button>
+        </div>
+        <div class="keywords">
+          <ul class="lista-letras">
+            <li class="letra" id="A">A</li>
+            <li class="letra" id="B">B</li>
+            <li class="letra" id="C">C</li>
+            <li class="letra" id="D">D</li>
+            <li class="letra" id="E">E</li>
+            <li class="letra" id="F">F</li>
+            <li class="letra" id="G">G</li>
+            <li class="letra" id="H">H</li>
+            <li class="letra" id="I">I</li>
+            <li class="letra" id="J">J</li>
+            <li class="letra" id="K">K</li>
+            <li class="letra" id="L">L</li>
+            <li class="letra" id="M">M</li>
+            <li class="letra" id="N">N</li>
+            <li class="letra" id="Ñ">Ñ</li>
+            <li class="letra" id="O">O</li>
+            <li class="letra" id="P">P</li>
+            <li class="letra" id="Q">Q</li>
+            <li class="letra" id="R">R</li>
+            <li class="letra" id="S">S</li>
+            <li class="letra" id="T">T</li>
+            <li class="letra" id="U">U</li>
+            <li class="letra" id="V">V</li>
+            <li class="letra" id="W">W</li>
+            <li class="letra" id="X">X</li>
+            <li class="letra" id="Y">Y</li>
+            <li class="letra" id="Z">Z</li>
+          </ul>
+        </div>
+        <span class="intentos-restantes"
+          >Can you pass this challenge or will you be hanged?</span
+        >
+        <span class="palabra"></span>
+      </div>
+    </div>
+
+    <footer>
+      <div class="redes">
+        <span class="copyrigth">&#169; Femenia Ignacio - 2022</span>
+        <br /><br />
+        <a href="https://github.com/ignafemenia" target="_blank"
+          ><img class="imgRedes" src="Imagenes/IconoGithub.png" alt="Github"
+        /></a>
+        <a href="https://www.linkedin.com/in/ignaciofemenia/" target="_blank"
+          ><img
+            class="imgRedes"
+            src="Imagenes/IconoLinkedin.png"
+            alt="Linkedin"
+        /></a>
+      </div>
+    </footer>
+    <script src="canvas.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
